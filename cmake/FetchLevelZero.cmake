@@ -44,10 +44,10 @@ if (NOT DEFINED LEVEL_ZERO_LIBRARY OR NOT DEFINED LEVEL_ZERO_INCLUDE_DIR)
     set(BUILD_STATIC ON)
 
     if (UR_LEVEL_ZERO_LOADER_REPO STREQUAL "")
-        set(UR_LEVEL_ZERO_LOADER_REPO "https://github.com/oneapi-src/level-zero.git")
+        set(UR_LEVEL_ZERO_LOADER_REPO "https://github.com/KseniyaTikhomirova/level-zero.git")
     endif()
     if (UR_LEVEL_ZERO_LOADER_TAG STREQUAL "")
-        set(UR_LEVEL_ZERO_LOADER_TAG 35c037cdf4aa9a2e6df34b6f1ce1bdc86ac5422f)
+        set(UR_LEVEL_ZERO_LOADER_TAG 85d881d85938b7af75098e624caf91c8343fffc5)
     endif()
 
     # Disable due to a bug https://github.com/oneapi-src/level-zero/issues/104
