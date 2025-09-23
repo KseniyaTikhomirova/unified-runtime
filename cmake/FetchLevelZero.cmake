@@ -13,7 +13,7 @@ find_package(PkgConfig QUIET)
 # so try using that to find the install and if it's not available
 # just try to search for the path.
 if(PkgConfig_FOUND)
-  pkg_check_modules(level-zero level-zero>=1.24.2)
+  pkg_check_modules(level-zero level-zero>=1.24.3)
   if(level-zero_FOUND)
     set(LEVEL_ZERO_INCLUDE_DIR "${level-zero_INCLUDEDIR}/level_zero")
     set(LEVEL_ZERO_LIBRARY_SRC "${level-zero_LIBDIR}")
@@ -47,10 +47,10 @@ if(NOT LEVEL_ZERO_LIB_NAME AND NOT LEVEL_ZERO_LIBRARY)
   endif()
   set(BUILD_STATIC ON)
 
-  set(UR_LEVEL_ZERO_LOADER_REPO "https://github.com/oneapi-src/level-zero.git")
+  set(UR_LEVEL_ZERO_LOADER_REPO "https://github.com/KseniyaTikhomirova/level-zero.git")
   # Remember to update the pkg_check_modules minimum version above when updating the
   # clone tag
-  set(UR_LEVEL_ZERO_LOADER_TAG v1.24.2)
+  set(UR_LEVEL_ZERO_LOADER_TAG 2de4ae06d3c9428dc872d5745d649972bceae09d)
 
   # Disable due to a bug https://github.com/oneapi-src/level-zero/issues/104
   set(CMAKE_INCLUDE_CURRENT_DIR OFF)
